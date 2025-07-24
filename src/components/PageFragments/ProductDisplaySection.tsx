@@ -130,7 +130,7 @@ const ProductDisplaySection = ({ FormatedId }: ProductDisplaySectionProps) => {
 											<button
 												className={`${
 													Product?.stock_status === "instock"
-														? "bg-green-100"
+														? "bg-green-500"
 														: Product?.stock_status === "outofstock"
 														? "bg-red-500"
 														: "bg-black"

@@ -37,7 +37,7 @@ const Page = () => {
 						<SearchDataOutput data={Products} isloading={ProductWpIsLoading} />
 					</>
 				)}
-				{ProductWpIsLoading && <ScaleLoader color='#28CB6D' />}
+				{ProductWpIsLoading && <ScaleLoader color='#E58411' />}
 			</main>
 		</AppLayout>
 	);

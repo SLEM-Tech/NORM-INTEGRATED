@@ -18,31 +18,53 @@ const SubCategoryCard = ({ id, image, name }: SubCategoryCardProps) => {
 	return (
 		<Link
 			href={`${"/category/" + convertToSlug(name) + "-" + id}`}
-			className={`flex flex-col gap-2 items-center group w-fit cursor-pointer rounded-sm bg-white border-[2px] border-transparent hover:border-primary/50 transition shrink-0 ${
-				data === id ? "border-[2px]" : ""
-			}`}
+			className={`
+    flex flex-col items-center group cursor-pointer rounded-lg 
+    bg-white border-2 border-gray-100 hover:border-primary/50 
+    transition-all duration-300 overflow-hidden shadow-sm
+    hover:shadow-md w-full h-full
+    ${data === id ? "border-primary !shadow-md" : ""}
+  `}
 		>
-			<div className='flex flex-wrap px-8 pt-2'>
+			{/* Image Container */}
+			<div className='relative w-full aspect-square p-4'>
 				{image ? (
 					<Picture
-						src={image || "/images/home-img-1.png"}
-						alt={`category-img-${name}`}
-						className='w-[300px] h-[200px] object-contain object-center bg-[#111111] group-hover:scale-105 transition-[.4]'
+						src={image || "/images/placeholder-category.png"}
+						alt={`${name} category`}
+						className='
+          w-full h-full object-contain object-center 
+          transition-transform duration-500 group-hover:scale-110
+        '
 					/>
 				) : (
-					<div className='w-[300px] h-[200px] object-contain object-center bg-[#111111] transition-[.4] grid place-items-center'>
+					<div
+						className='
+        w-full h-full bg-gradient-to-br from-primary to-primary-400 
+        flex items-center justify-center rounded-lg
+      '
+					>
 						<h4
 							dangerouslySetInnerHTML={{ __html: name }}
-							className='text-white font-semibold leading-[1.5rem] pb-2 text-center'
+							className='
+            text-white font-bold text-xs sm:text-lg md:text-xl 
+            text-center px-2 leading-tight
+          '
 						/>
 					</div>
 				)}
 			</div>
 
-			<h4
-				dangerouslySetInnerHTML={{ __html: name }}
-				className='text-primaryColor-100 font-semibold leading-[1.5rem] pb-2 text-center'
-			/>
+			{/* Category Name */}
+			<div className='w-full p-3 text-center border-t border-gray-50'>
+				<h4
+					dangerouslySetInnerHTML={{ __html: name }}
+					className='
+        text-gray-800 font-semibold text-xs sm:text-base 
+        group-hover:text-primary transition-colors line-clamp-2
+      '
+				/>
+			</div>
 		</Link>
 	);
 };

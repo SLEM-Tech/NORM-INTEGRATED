@@ -108,7 +108,7 @@ const MainCategorySection = () => {
 			)}
 			{categoryProductsWpIsLoading && (
 				<div className='flex w-full justify-center mt-6'>
-					<ScaleLoader color='#28CB6D' />
+					<ScaleLoader color='#E58411' />
 				</div>
 			)}
 			{totalPages && totalPages > 1 && (
