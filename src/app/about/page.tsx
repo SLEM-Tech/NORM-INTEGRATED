@@ -14,14 +14,14 @@ const page = () => {
 				<div className='grid slg:grid-cols-2 mt-2 sm:mt-5 slg:mt-10 px-4 slg:px-16 overflow-hidden'>
 					<div className='flex flex-col gap-2'>
 						<h3 className='slg:text-2xl text-lg font-semibold text-center slg:text-start'>
-							Welcome to our Norm's Integrated Garage Limited
+							Welcome to our Norm&apos;s Integrated Garage Limited
 						</h3>
 						<p className='text-xs sm:text-sm slg:text-base !leading-[180%] text-black'>
-							Norm's Integrated Garage is a distributor in Nigeria. We offer a
-							wide range of high-quality appliances designed to meet the diverse
-							needs of our customers. Our products include; <br /> Kitchen
-							Appliances, Laundry Appliances, office Equipment, Home Comforts
-							such as Air conditioners, heaters, fans e.t.c and Home
+							Norm&apos;s Integrated Garage is a distributor in Nigeria. We
+							offer a wide range of high-quality appliances designed to meet the
+							diverse needs of our customers. Our products include; <br />{" "}
+							Kitchen Appliances, Laundry Appliances, office Equipment, Home
+							Comforts such as Air conditioners, heaters, fans e.t.c and Home
 							Entertainment Equipment such as TVs, Sound Systems, and multimedia
 							devices.
 						</p>
