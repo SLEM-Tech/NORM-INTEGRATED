@@ -16,7 +16,7 @@ import computerOfficeResponsive2 from "./computer-office-responsive-image.png";
 import officeImg1 from "./office-img.png";
 import confetti from "./confetti.png";
 import banner from "./banner.png";
-import logoImage from "./duply-logo.png";
+import logoImage from "./norms-logo.png";
 import norm_bg from "./norm-bg.png";
 import rectangle_3 from "./rectangle-3.png";
 import material_img from "./material-img.png";

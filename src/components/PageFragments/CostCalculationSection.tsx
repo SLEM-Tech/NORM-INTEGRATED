@@ -304,9 +304,8 @@ const CostCalculationSection = () => {
 										onClick={() => router.push("/terms-of-use")}
 										className='text-primary font-bold hover:underline transition'
 									>
-										terms & conditions
+										terms & conditions.
 									</span>{" "}
-									of duply.com.ng
 								</span>
 							</label>
 						</div>
