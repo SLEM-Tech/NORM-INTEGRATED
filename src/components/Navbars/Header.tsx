@@ -211,25 +211,25 @@ const Header = () => {
 		<>
 			<header
 				className={`flex slg:flex-col w-full justify-center items-center z-50 transition drop-shadow-md fixed top-0 ${
-					navbar ? "backdrop-blur-lg bg-black" : ""
+					navbar ? "backdrop-blur-lg bg-black" : "backdrop-blur-lg bg-black/80"
 				}`}
 			>
 				{/* Desktop */}
-				<div className='hidden slg:grid grid-cols-4 items-center w-full py-1 max-w-[1300px] z-30 px-5 lg:px-2 xl:px-0'>
-					<LogoImage className='w-[100px] lg:w-[120px] col-span-1' />
+				<div className='hidden slg:grid grid-cols-4 items-center w-full max-w-[1300px] py-2 z-30 px-5 lg:px-2 xl:px-0'>
+					<LogoImage className='!w-[60px] lg:!w-[70px] col-span-1' />
 
 					<div className='flex justify-center w-fit mx-auto gap-12 overflow-hidden h-10 col-span-2'>
 						{headerNavLinks.map((link) => (
 							<Link
 								key={link.id}
 								href={link.href}
-								className={`text-base font-[300] leading-[1.8] transition hover:text-effect relative group ${
-									pathname === link.href ? "text-effect" : "text-white"
+								className={`text-base font-[300] leading-[1.8] transition hover:text-primary relative group ${
+									pathname === link.href ? "text-primary" : "text-white"
 								}`}
 							>
 								{link.text}
 								<span
-									className={`h-[1px] inline-block bg-effect absolute left-0 -bottom-0 group-hover:w-full transition-width ease duration-300 ${
+									className={`h-[1px] inline-block bg-primary absolute left-0 -bottom-0 group-hover:w-full transition-width ease duration-300 ${
 										pathname === link.href ? "w-full" : "w-0"
 									}`}
 								>
@@ -367,7 +367,7 @@ const Header = () => {
 				</div>
 
 				{/* Mobile */}
-				<div className='flex flex-col items-center w-full slg:hidden px-2 xs:px-4'>
+				<div className='flex flex-col items-center w-full slg:hidden py-2 px-2 xs:px-4'>
 					<div className='grid grid-cols-2'>
 						<div className='flex items-center gap-1'>
 							<div className=''>
@@ -376,7 +376,7 @@ const Header = () => {
 									className='text-2xl text-primary hover:scale-105 transition-[.5]'
 								/>
 							</div>
-							<LogoImage className='rounded-sm !w-[100px] ' />
+							<LogoImage className='!w-[60px] lg:!w-[70px]' />
 						</div>
 
 						<div className='flex gap-2 justify-end items-center cursor-pointer'>
