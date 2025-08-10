@@ -35,10 +35,10 @@ const Page = () => {
 						Our Policies
 					</h4>
 					<h3 className='font-semibold text-xl sm:text-2xl md:text-3xl leading-[150%]'>
-						Norm's Integrated Garage Limited Policies
+						Norm&apos;s Integrated Garage Limited Policies
 					</h3>
 					<span className='text-xs sm:text-sm xl:text-base leading-[150%] text-black/80 sm:max-w-3xl slg:max-w-2xl'>
-						At Norm's Integrated Garage Limited, we provide comprehensive
+						At Norm&apos;s Integrated Garage Limited, we provide comprehensive
 						automotive services, operate modern parking facilities, and offer
 						reliable transportation solutions while ensuring safety, quality,
 						and customer satisfaction in all our operations.
@@ -91,23 +91,23 @@ const Page = () => {
 					{activeTab === "termsOfUse" && (
 						<div id='termsOfUse' className='text-[#667085]'>
 							<h4 className='text-base sm:text-xl xl:text-2xl font-semibold text-black capitalize'>
-								Terms of Use - Norm's Integrated Garage Limited
+								Terms of Use - Norm&apos;s Integrated Garage Limited
 							</h4>
 
 							<p className='mt-2 leading-[1.8] text-xs md:text-sm xl:text-base'>
-								By using Norm's Integrated Garage Limited's automotive services,
-								parking facilities, or transportation services, you agree to the
-								following comprehensive terms and conditions:
+								By using Norm&apos;s Integrated Garage Limited&apos;s automotive
+								services, parking facilities, or transportation services, you
+								agree to the following comprehensive terms and conditions:
 							</p>
 
 							<ul className='list-disc pl-5 mt-2 space-y-2 text-xs md:text-sm xl:text-base'>
 								<li>
-									<span className='font-medium'>Service Portfolio:</span> Norm's
-									Integrated Garage provides comprehensive automotive services
-									including vehicle sales, repairs, maintenance, diagnostic
-									services, parts supply, modern parking facilities, vehicle
-									storage, and road transportation logistics services for
-									individuals and businesses.
+									<span className='font-medium'>Service Portfolio:</span>{" "}
+									Norm&apos;s Integrated Garage provides comprehensive
+									automotive services including vehicle sales, repairs,
+									maintenance, diagnostic services, parts supply, modern parking
+									facilities, vehicle storage, and road transportation logistics
+									services for individuals and businesses.
 								</li>
 								<li>
 									<span className='font-medium'>
@@ -185,8 +185,8 @@ const Page = () => {
 								<span className='font-medium'>Liability Limitations:</span> Our
 								liability is limited to the value of services provided.
 								Pre-existing vehicle conditions are documented but not covered
-								under our warranties. Customer vehicles are serviced at owner's
-								risk with appropriate insurance recommendations.
+								under our warranties. Customer vehicles are serviced at
+								owner&apos;s risk with appropriate insurance recommendations.
 							</p>
 						</div>
 					)}
@@ -194,12 +194,12 @@ const Page = () => {
 					{activeTab === "privacyPolicy" && (
 						<div id='privacyPolicy' className='text-[#667085]'>
 							<h4 className='text-sm sm:text-xl xl:text-2xl font-semibold text-black'>
-								PRIVACY POLICY - NORM'S INTEGRATED GARAGE LIMITED
+								PRIVACY POLICY - NORM&apos;S INTEGRATED GARAGE LIMITED
 							</h4>
 
 							<p className='mt-2 leading-[1.8] text-xs md:text-sm xl:text-base'>
-								Norm's Integrated Garage Limited is committed to protecting the
-								privacy of our customers while providing comprehensive
+								Norm&apos;s Integrated Garage Limited is committed to protecting
+								the privacy of our customers while providing comprehensive
 								automotive services, parking facilities, and transportation
 								solutions. This policy explains our data practices across all
 								service areas.
@@ -211,7 +211,7 @@ const Page = () => {
 
 							<ul className='mt-2 leading-[1.8] text-xs md:text-sm xl:text-base list-decimal pl-4'>
 								<li>
-									Customer identification (name, contact details, driver's
+									Customer identification (name, contact details, driver&apos;s
 									license information)
 								</li>
 								<li>
@@ -318,12 +318,12 @@ const Page = () => {
 					{activeTab === "deliveryReturn" && (
 						<div id='deliveryReturn' className='text-[#667085]'>
 							<h3 className='font-semibold text-sm md:text-base xl:text-lg mb-2'>
-								SERVICE DELIVERY & GUARANTEE POLICY - NORM'S INTEGRATED GARAGE
-								LIMITED
+								SERVICE DELIVERY & GUARANTEE POLICY - NORM&apos;S INTEGRATED
+								GARAGE LIMITED
 							</h3>
 
 							<p className='text-xs md:text-sm xl:text-base mb-4'>
-								Norm's Integrated Garage Limited provides comprehensive
+								Norm&apos;s Integrated Garage Limited provides comprehensive
 								automotive services with professional standards, reliable
 								parking solutions, and dependable transportation services backed
 								by quality guarantees and customer satisfaction commitments.
@@ -528,14 +528,14 @@ const Page = () => {
 					{activeTab === "refundPolicy" && (
 						<div id='refundPolicy' className='text-[#667085]'>
 							<h3 className='font-semibold text-sm md:text-base xl:text-lg mb-2'>
-								REFUND POLICY - NORM'S INTEGRATED GARAGE LIMITED
+								REFUND POLICY - NORM&apos;S INTEGRATED GARAGE LIMITED
 							</h3>
 							<p className='text-xs md:text-sm xl:text-base mb-4'>
 								Effective Date: {new Date().toLocaleDateString("en-GB")}
 							</p>
 
 							<p className='text-xs md:text-sm xl:text-base mb-4'>
-								At Norm's Integrated Garage Limited, we are committed to
+								At Norm&apos;s Integrated Garage Limited, we are committed to
 								delivering exceptional automotive services, reliable parking
 								solutions, and dependable transportation services that meet
 								professional standards and exceed customer expectations. Our
@@ -741,7 +741,7 @@ const Page = () => {
 								</li>
 							</ul>
 
-							<div className='mt-6 pt-4 border-t border-gray-200'>
+							{/* <div className='mt-6 pt-4 border-t border-gray-200'>
 								<h4 className='font-semibold text-xs md:text-sm xl:text-base mb-2'>
 									Contact Information
 								</h4>
@@ -755,7 +755,7 @@ const Page = () => {
 									<li>Phone: +234-801-234-5010</li>
 									<li>Website: www.normsgarage.com.ng</li>
 								</ul>
-							</div>
+							</div> */}
 						</div>
 					)}
 				</div>
