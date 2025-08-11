@@ -1,7 +1,7 @@
-const websiteUrl = "";
+const websiteUrl = "https://norm-integrated.vercel.app";
 export const websiteName = "Norm's Integrated Garage Limited";
 export const SEODATA = {
-	defaultOGImage: ``,
+	defaultOGImage: `/_next/static/media/norms-logo.d727accb.png`,
 	default: {
 		title: websiteName,
 		description: `This is ${websiteName}`,

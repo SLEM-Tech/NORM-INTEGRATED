@@ -473,7 +473,7 @@ const Header = () => {
 								) : (
 									<UserIconSvg
 										onClick={() => router.push("/user/login")}
-										className='w-6 h-6'
+										className='w-6 h-6 fill-white'
 									/>
 								)}
 							</div>
